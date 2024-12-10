@@ -32,6 +32,8 @@ const Canvas = ({canvasData}) => {
 
   return (
     <canvas ref={canvasRef}
+        data-scroll
+        data-scroll-speed={Math.random().toFixed(1)}
         id='canvas'
         className='absolute'
         style={{width : `${size*1.2}px`, height : `${size*1.2}px`, top : `${top}%`, left : `${left}%`, zIndex : `${zIndex}`}}>  
