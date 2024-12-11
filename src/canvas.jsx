@@ -15,6 +15,13 @@ const Canvas = ({canvasData}) => {
                 ease : 'linear',repeat : -1,
                 onUpdate:()=>
                     {setindex({value : Math.round(index.value)})}})
+
+        gsap.from(canvasRef.current,
+            {scale : 1.2,
+                opacity : 0,
+                duration : 0.5,
+                ease : 'linear',
+            })
     })
 
     useEffect(() => {
